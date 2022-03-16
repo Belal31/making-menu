@@ -1,0 +1,78 @@
+h2{
+    margin: auto;
+    width: 200px;
+    background-color: #c54949;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#menu{
+    margin: auto;
+    width: 960px;
+    min-height: 38px;
+    background-color: #4e4e4e;
+    border-bottom: 2px solid orange;
+    padding: 0;
+}
+#menu li{
+    list-style-type: none;
+    float: left;
+    border-left: 1px solid #2b2a2a;
+    border-right: 1px solid #605b5b;
+    position: relative;
+}
+#menu li:first-child{
+    border-left: none;
+}
+#menu li:last-child{
+    border-right: none;
+}
+#menu li a{
+    text-decoration: none;
+    background-color: #4e4e4e;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.3s all ease;
+}
+#menu li a:hover{
+    background-color: orange;
+}
+#menu li ul{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    left: -99999px;
+    /*transition: 2s all ease;*/
+}
+#menu li:hover ul{
+    left: 0;
+}
+#menu li ul li{
+    float: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #605b5b;
+    border-bottom: 1px solid #2b2a2a;
+    width: 200px;
+    position: relative;
+}
+#menu li ul li:first-child{
+    border-top: none;
+}
+#menu li ul li:last-child{
+    border-bottom: none;
+}
+#menu li ul li a{
+    
+}
+#menu li ul li ul{
+    position: absolute;
+    top: -99999px;
+}
+#menu li ul li:hover ul{
+    top: 0;
+    left: 200px;
+}
